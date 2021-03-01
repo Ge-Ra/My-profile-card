@@ -1,0 +1,147 @@
+/* Positioning */
+
+* {
+  box-sizing: border-box;
+}
+
+.profile-card {
+  width: 580px;
+  max-width: calc(100vw - 10px);
+  border-radius: 4px;
+}
+
+.profile-image {
+  margin-top: -60px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+/* Styling */
+
+img {
+  width: 170px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1510714406268-64cf6c0b2a58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.name-headline {
+  font-family: 'RocknRoll One', sans-serif;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.name-headline :last-child {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.content {
+  font-size: 1.1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.links h2 {
+  font-size: 1.5em;
+  color: rgba(0, 0, 0);
+  text-transform: uppercase;
+  padding-top: 1rem;
+  font-weight: 900;
+}
+
+li {
+  font-size: 1.5em;
+  display: inline;
+  padding: 1rem;
+}
+
+/* Colors, effects */
+
+.profile-card {
+  background-color: rgba(215, 254, 255, 0.8);
+  box-shadow: hsla(199, 100%, 50%, 0.8) 0px 0px 150px;
+}
+
+img {
+  border: 2px solid hsla(199, 100%, 50%, 0.8);
+  filter: grayscale(80%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+  transition: all 0.5s ease-in-out;
+}
+
+a:link {
+  color: rgba(255, 74, 74, 0.8);
+}
+
+a:visited {
+  color: rgb(82, 81, 81);
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: rgba(255, 31, 31, 0.8);
+}
+
+.about {
+  padding: 1.2rem;
+  border-top: 2px solid rgba(255, 31, 31, 0.8);
+  border-bottom: 2px solid rgba(255, 31, 31, 0.8);
+}
+
+/* Responsive settings */
+
+@media (max-width: 480px) {
+  body {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 786px) {
+  img:hover {
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
